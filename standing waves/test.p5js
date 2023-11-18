@@ -1,0 +1,12 @@
+[
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n  ellipse(200, 200, 50, 50);\n//   fill the ellipse with red\n    fill(255, 0, 0);\n}"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": ""
+  }
+]
