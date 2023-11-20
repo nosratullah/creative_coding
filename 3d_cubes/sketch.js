@@ -12,7 +12,7 @@ function draw() {
       push();
       translate(i * (smallCube+bigCube+10), j * (smallCube+bigCube+10), 0);
       let n = noise(i * 0.1, j * 0.1, frameCount * 0.02);
-      if(n>0.5) {
+      if(n>0.3) {
         rotateX(n * TWO_PI);
       // rotateY(n * TWO_PI);
        rotateZ(n * TWO_PI);
@@ -21,7 +21,9 @@ function draw() {
       stroke('white');
       box(smallCube);
       noFill();
-      stroke('black');
+      // stroke('black');
+      let tranparent = map(n, 0, 1, 0, 255);
+      stroke(10, 10, 10, tranparent);
       box(bigCube);
       pop();
     }
