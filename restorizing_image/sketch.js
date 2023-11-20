@@ -18,8 +18,8 @@ function draw() {
       let g = img.pixels[index + 1];
       let b = img.pixels[index + 2];
       let intensity = (r + g + b) / 3;
-      let diameter = map(intensity, 0, 255, 10, 1);
-      let diameter_inv = map(intensity, 0, 255, 1, 10);
+      let diameter = map(intensity, 0, 255, 5, 1);
+      let diameter_inv = map(intensity, 0, 255, 1, 6);
       let noise_val = noise(x * 0.01, y * 0.01, frameCount * 0.1);
       // noise_val = sin(frameCount * 1);
       // color(10, 50, 100);
